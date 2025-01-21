@@ -1,0 +1,6 @@
+{
+    "cortex-debug.armToolchainPath": "C:/Users/geoma/xpack-arm-none-eabi-gcc-12.2.1-1.2/bin",
+    "cortex-debug.openocdPath": "C:/Users/geoma/xpack-openocd-0.12.0-4/bin/openocd.exe",
+    "cortex-debug.stlinkPath": "C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.0.202409170845/tools/bin/ST-LINK_gdbserver.exe"
+    // "cortex-debug.JLinkGDBServerPath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
+}

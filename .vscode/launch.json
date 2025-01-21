@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STlink launch DEBUG",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Nucleo_F302R8_VSCode.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "device": "STM32F302R8",
+            "showDevDebugOutput": "raw",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            // "preLaunchTask": "Build", // configured in tasks.json
+            // "preLaunchCommands": ["Build"], // you can execute command instead of task
+            "svdFile": "${workspaceFolder}/STM32F302.svd",
+            "swoConfig": {}
+        },
+        {
+            "name": "openOCD launch DEBUG",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Nucleo_F302R8_VSCode.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "interface": "swd",
+            "device": "STM32F302R8",
+            "showDevDebugOutput": "raw",
+            "svdFile": "${workspaceFolder}/STM32F302.svd",
+            "configFiles": [
+                "C:/Users/geoma/xpack-openocd-0.12.0-4/openocd/scripts/interface/stlink.cfg",
+                "C:/Users/geoma/xpack-openocd-0.12.0-4/openocd/scripts/target/stm32f3x.cfg"
+            ]
+        }
+    ]
+}
